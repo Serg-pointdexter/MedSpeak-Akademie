@@ -77,26 +77,11 @@ export default function Registration() {
     setErrors({});
     setIsSubmitting(true);
 
-    try {
-      const response = await fetch('/api/register', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(data)
-      });
-      
-      if (!response.ok) {
-        throw new Error('Failed to submit');
-      }
-
+    // Simulate API call
+    setTimeout(() => {
       setIsSubmitting(false);
       setIsSuccess(true);
-    } catch (error) {
-      console.error(error);
-      setIsSubmitting(false);
-      alert('There was an issue submitting your registration. Please try again.');
-    }
+    }, 1500);
   };
 
   return (
