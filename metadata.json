@@ -1,0 +1,8 @@
+{
+  "name": "Remix: MedSpeak Akademie",
+  "description": "Premium medical German academy for doctors preparing for the Fachsprachprüfung (FSP).",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
