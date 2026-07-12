@@ -77,11 +77,20 @@ export default function Registration() {
     setErrors({});
     setIsSubmitting(true);
 
-    // Simulate API call
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setIsSuccess(true);
-    }, 1500);
+    const message = `Hello MedSpeak! I would like to register.
+Name: ${data.fullName}
+Specialty: ${data.specialty}
+Level: ${data.level}
+Phone: ${data.phone}
+Email: ${data.email}`;
+
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappUrl = `https://wa.me/201555844616?text=${encodedMessage}`;
+
+    window.open(whatsappUrl, '_blank');
+    
+    setIsSubmitting(false);
+    setIsSuccess(true);
   };
 
   return (
