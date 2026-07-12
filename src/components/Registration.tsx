@@ -85,7 +85,7 @@ Phone: ${data.phone}
 Email: ${data.email}`;
 
     const encodedMessage = encodeURIComponent(message);
-    const whatsappUrl = `https://wa.me/201555844616?text=${encodedMessage}`;
+    const whatsappUrl = `https://wa.me/201152644924?text=${encodedMessage}`;
 
     window.open(whatsappUrl, '_blank');
     
